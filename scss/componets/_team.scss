@@ -1,171 +1,110 @@
 .team {
+  padding: 94px 0;
   background-color: $whiteish;
-  padding: 94px 215px;
-  @media (max-width:768px) {
-    padding: 15px;
+  width: 100%;
+  &__card img {
+    width: 100%;
+ 
+    @media (min-width:320px) {
+      height: auto;
+    }
+    @media (min-width:768px) {
+      height: 374px;
+    }
+    @media (min-width:1200px) {
+      height: 260px;
+    }
+  }
+  &__title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    row-gap: 30px;
   }
   &__card {
-    background: $white;
-    width: 260px;
+    background-color: $white;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    @media (max-width: 768px) {
-      width: 510px;
-      height: 460px;
-      
+    @media (min-width: 300px) {
+      width: 270px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 480px) {
+      width: 450px;
+      height: 622px;
+    }
+    @media (min-width:768px){
       width: 354px;
+      height: 536px;
+    }
+    @media (min-width:1200px){
+      width: 270px;
       height: 428px;
     }
-  }
-  /* material shadow v1 */
-  &-team {
-    width: 370px;
-    height: 294px;
-    position: relative;
-    background-color: rgba(33, 150, 243, 0.9);
-    z-index: 30;
-  }
-  &__social {
-    margin: 17px;
-    display: flex;
-    padding: 16px 30px 32px;
-    gap: 22px;
-    @media (min-width: 320px) {
-      justify-content: center;
+
+
+    &:hover {
+      translate: 20px -20px;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
+    }
+    h2 {
+      color: $light-grey;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.48px;
+    }
+    h3 {
+      color: $var1;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.48px;
     }
   }
-}
-
-.progect_team {
-  background: $white;
-  border: 1px solid $white-diff;
-  width: 370px;
-}
-.job {
-  margin-top: 10px;
-}
-.text__cards {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
-
-  letter-spacing: 0.06em;
-
-  color: $dark;
-}
-
-.p-box-team {
-  display: none;
-}
-.box-team:hover > .p-box-team {
-  display: block;
-  transition: 0.8s all;
-}
-.p-box-team {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0 auto;
-  padding-bottom: 94px;
-  @media (min-width: 320px) {
-    flex-wrap: wrap;
-    padding: 0;
-  }
-  @media (min-width: 992px) {
-    flex-wrap: nowrap;
-  }
-}
-.progect_team {
-  background: $white;
-  border: 1px solid $white-diff;
-  width: 370px;
-}
-.text__cards {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: $dark;
-}
-.box-team {
-  width: 370px;
-  height: 294px;
-  position: relative;
-  background-color: rgba(33, 150, 243, 0.9);
-  z-index: 30;
-
-  &:hover > .p-box-team {
-    display: block;
-    transition: 0.8s all;
-  }
-}
-
-.p-box-team {
-  color: $white;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.54px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.name {
-  margin-top: 30px;
-}
-.elipse {
-  width: 20px;
-  height: 20px;
-  background-color: $white;
-  border-radius: 100%;
-  position: relative;
-  cursor: pointer;
-}
-.card__photo {
-  width: 100%;
-}
-.p-box-team > .container {
-  display: flex;
-  gap: 22px;
-  margin-left: 54px;
-  margin-bottom: 42px;
-  margin-top: 28px;
-}
-
-.team__title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-top: 94px;
-  margin-bottom: 30px;
-
-  color: #212121;
-  @media (min-width: 320px) {
-    font-size: 28px;
+  &__ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    a {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 100%;
+      position: relative;
+      &:hover,
+      &:hover path {
+        background-color: $blue;
+        fill: $white;
+      }
+    }
   }
 }

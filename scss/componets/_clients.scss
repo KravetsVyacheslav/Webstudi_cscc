@@ -13,7 +13,7 @@
   }
 }
 .clients {
-  padding: 94px 0;
+  padding: 60px 15px;
   &__ul {
     display: flex;
     gap: 29px;
@@ -26,6 +26,31 @@
     }
     @media (max-width: 786px) {
       padding: 0;
+    }
+  }
+  &__item {
+    list-style: none;
+    a {
+      display: block;
+      position: relative;
+      border: 1px solid $var8;
+      border-radius: 4px;
+      width: 170px;
+      height: 92px;
+      &:hover {
+        border-color: $blue;
+        path {
+          fill: $blue;
+        }
+      }
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
   }
   &__section {
@@ -79,10 +104,8 @@
   fill: #2196f3;
   border-color: #2196f3;
 }
-.clients {
-  padding: 94px;
-}
 
+ 
 svg {
   fill: #afb1b8;
 }
