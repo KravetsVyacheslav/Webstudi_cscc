@@ -3,7 +3,6 @@
   width: 100%; 
   position: fixed; 
   background-color: #ffffff; 
- 
   top: 0; 
   @media (min-width: 320px) { 
     height: 60px; 
@@ -16,6 +15,14 @@
   @media (min-width: 1200px) { 
     height: 80px; 
     padding: 26px 0; 
+  }
+  &__active .header__link:after {
+    bottom: -26px;
+    color: #2196f3;
+    transform: rotate(0deg);
+  }
+  &__active .header__link {
+    color: #2196f3;
   } 
   &__logo { 
     font-family: "Raleway"; 
@@ -219,4 +226,11 @@
   @media (min-width: 768px) { 
     display: block;
   }
+}
+.color_span {
+  color: $blue;
+}
+.social-link-menu-hr {
+  padding: 0 10%;
+  border-right: 1px solid (#AFB1B8);    
 }

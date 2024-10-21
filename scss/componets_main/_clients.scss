@@ -13,7 +13,7 @@
   }
 }
 .clients {
-  padding: 60px 15px;
+  padding: 94px 0;
   &__ul {
     display: flex;
     gap: 29px;
@@ -36,7 +36,6 @@
       border: 1px solid $var8;
       border-radius: 4px;
       width: 170px;
-      height: 92px;
       &:hover {
         border-color: $blue;
         path {
@@ -63,13 +62,10 @@
     height: 92px;
     @media (min-width: 768px) {
       width: 226px;
-
     }
     @media (min-width: 1200px) {
       width: 170px;
-
     }
-  }
   &_section > svg {
     fill: $light-grey;
   }
@@ -257,4 +253,5 @@ button {
   @media (min-width:768px) {
     flex-wrap: wrap;
   }
+}
 }

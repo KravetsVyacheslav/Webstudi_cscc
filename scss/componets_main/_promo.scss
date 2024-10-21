@@ -1,5 +1,5 @@
 .promo {
-    background-image: url(../../img/mob-bg1x.png);
+    background-image: url(../img/mob-bg1x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,28 +12,28 @@
           (-webkit-min-device-pixel-ratio: 2), 
           (min-resolution: 192dpi), 
           (min-resolution: 2dppx) { 
-          background-image: url(../../img/mob-bg2x.png); 
+          background-image: url(../img/mob-bg2x.png); 
         } 
        
         @media screen and (min-width: 768px) { 
           margin-top: 80px; 
-          background-image: url(../../img/bg-tablet1x.png); 
+          background-image: url(../img/bg-tablet1x.png); 
        
           @media (min-device-pixel-ratio: 2), 
             (-webkit-min-device-pixel-ratio: 2), 
             (min-resolution: 192dpi), 
             (min-resolution: 2dppx) { 
-            background-image: url(../../img/bg-tablet2x.png); 
+            background-image: url(../img/bg-tablet2x.png); 
           } 
         } 
         @media screen and (min-width: 1200px) { 
-          background-image: url(../../img/bg1x.png); 
+          background-image: url(../img/bg1x.png); 
        
           @media (min-device-pixel-ratio: 2), 
             (-webkit-min-device-pixel-ratio: 2), 
             (min-resolution: 192dpi), 
             (min-resolution: 2dppx) { 
-            background-image: url(../../img/bg2x.png); 
+            background-image: url(../img/bg2x.png); 
           } 
         } 
      
